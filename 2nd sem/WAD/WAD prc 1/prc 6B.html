@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>209_Dayasagar_6B</title>
+<title>Without using split function</title>
+
+<script>
+
+var str = prompt("Enter the sentence: ","");
+
+var count=0;
+
+if(str!="")
+
+{
+
+   for (i=0;i<str.length;i++)
+
+   {
+
+   if(str.charAt(i)==" "&& str.charAt(i+1)!=" ") 
+
+   count++;
+
+   }
+
+    document.write("The sentence is : '"+"<b>"+str+"<b>"+"'"); 
+
+    document.write("<br>"+"Number of words are = "+(count+1));
+
+}
+
+else
+
+{
+
+   document.write("NO WORDS are entered!!"+"<br>");
+
+   document.write("<br>"+"<b>"+"The number of words in your input is: "+count+"<b>");
+
+}
+
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
