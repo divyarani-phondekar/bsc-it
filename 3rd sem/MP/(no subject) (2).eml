@@ -1,0 +1,381 @@
+Delivered-To: sakshipawar1704@gmail.com
+Received: by 2002:a05:6520:5d1:b0:26f:ff40:7071 with SMTP id r17csp287851lkr;
+        Fri, 18 Aug 2023 05:55:23 -0700 (PDT)
+X-Received: by 2002:a05:620a:907:b0:76d:7a9a:492c with SMTP id v7-20020a05620a090700b0076d7a9a492cmr2525655qkv.46.1692363323307;
+        Fri, 18 Aug 2023 05:55:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1692363323; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HUvyZfUA9/8FGftdv/umccrVT7UT4IyMbNMf7RCQis37QXrdUHjmOrl54Gp5FsIyCE
+         IRMD5EKnG1mFW+elLmAxOhb3bPbsAZ4RD9dQVo2KTEVCjAhy7GGAthlgNIrd3MumiRhx
+         1cfX/gMIJWxMDhtetazHJcIZCoIqRRcNMJq7sr2H9i46AzHhDFcF82xRMBp6yvyQYr9q
+         BPMELhqxKkOcpgq4mqP7/bOqKTKKSmb6XYWQO6UYwnw7Bk6Gr6ioqO5ENtCdoeWqTlrk
+         8ooH6/uo3PE7AmQfjOy4h0msD0TLUlot2jvw9XBdfOs2BbGLLuSAFMenF7nl8+HDc4pN
+         jjOw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=p+ezcJG+EtyYL/QqHJQooPtR48PeOoR12TzL+4o9Qg0=;
+        fh=r3jl7r30efT+HTvVkSHa5jdtSYxe5bAbVi3RmGlhqEQ=;
+        b=Vc4T1TVmMfRSz6lMg+oChSDgGRVm8GGAk78q7Pksr0HPAR2APhDJNeIt2Q2pYXdbT7
+         digzq28/TUZLUXfXyEGFa2TQmwKieVMThDhB2ktKtvh6ma0jd3rB7F9cC5fUnad9/Dub
+         xXGbiiwJo8Cqsqf8K/ju3ZjtMWBftQw0UmhRkuty95k+CEk5U9jd2c7nfUQ3QJdiS58T
+         6ZD5BVeeVcrAMTNyWaeh1lEKKAaECWF1xCjdoxXDVVfbJiSvRdqO0ctkCsmm9t6cDYkF
+         LMDDVGsIb820Y+ZR3hogq7BLyoLdgfPKGz64g5nRS5mHaKB4tdUFOFwG6BPDlc2rlZle
+         FdBQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=P9r6fDdH;
+       spf=pass (google.com: domain of pawarsonali2004@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pawarsonali2004@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <pawarsonali2004@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e8-20020a37ac08000000b0076cc71c15b2sor1233688qkm.7.2023.08.18.05.55.23
+        (Google Transport Security);
+        Fri, 18 Aug 2023 05:55:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of pawarsonali2004@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=P9r6fDdH;
+       spf=pass (google.com: domain of pawarsonali2004@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pawarsonali2004@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1692363322; x=1692968122;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=p+ezcJG+EtyYL/QqHJQooPtR48PeOoR12TzL+4o9Qg0=;
+        b=P9r6fDdHLnO0hKEmLOlzE/XxijLsWCwuFU+3SsXUXQc/vnwDwb5WeSVhHnga+8Cd+3
+         yXi5COjd4FERZXDcXwRwUTMoG1yOG+IP0BzmdHIH74jGv8oiIspb4g+721SVA4jL4TG4
+         c7Go59YHMOSseQ4hE5M65t+8d55WJVMHgp9rSIUwrjM/Ps4HIOKyYXk8HmauQJN/QVIz
+         idDkLGQzhL7Ob4+XCTYQnNMK5t53DqpC9+w2qfAnPUxasJpLynMNQU680PohVcKgHFCb
+         jdhse60c8PxpDkyHp6DnPXMaZtWVL9xACZ6EfaSkWgdompbzMYtY4hV4bFXd7Q0INix9
+         Vz5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1692363322; x=1692968122;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=p+ezcJG+EtyYL/QqHJQooPtR48PeOoR12TzL+4o9Qg0=;
+        b=JiSDHrjO58w64x6mTgk8aMHSoTkXAV9Ohzs0FU6DJn1QBSa4GxOskQh3NIlWUjBxsI
+         N8orhm7dyxyZD+xOSjF/d60SzDzVEyKIsbo2pCjqOmyBOEuFTXhVyfgzjIcx2nfX8TAy
+         lZEdhXgdP2lF0LoT37IrpSUtd26mGoIZEt97C7l+i8wPI9A8xf3sZGZadUIX2mF2RIYj
+         UEKJyt0nC0pULyY8U3F9ed04CqqIm5e6M4/LPcgjMaAJooR8oeymHUwJQuMJcGl1kPu+
+         mALcCl906DrcWqo6DIimGZoff6/5T/0+VHAYMzKGDjaXdqwRJXvy1yaiQnDcK3IqlwQA
+         IQPA==
+X-Gm-Message-State: AOJu0Yy/KAri3cHvdVHZC5Wsk0gHSnjDeZ78R33cLLWa1L3bw1nvvy90
+	Z5MZ6L/QzAHZENRlz+cZdobICas6IlphArU79kHz4mppyr8=
+X-Google-Smtp-Source: AGHT+IFEIju4yGSbwrJe3gecOhvQDF0S6h0jCaLR8RHbXuSTsl06df05K6RwwDKgqgJAShzB7U62E2FL9NPMhEBJLLE=
+X-Received: by 2002:a0c:ca92:0:b0:649:8baa:2982 with SMTP id
+ a18-20020a0cca92000000b006498baa2982mr2736529qvk.48.1692363322484; Fri, 18
+ Aug 2023 05:55:22 -0700 (PDT)
+MIME-Version: 1.0
+From: 555_SYIT_ Sonali Pawar <pawarsonali2004@gmail.com>
+Date: Fri, 18 Aug 2023 18:24:52 +0530
+Message-ID: <CAP4B-+jkx6cQeF79ktkKYROCTNfM=SwvhT3dpaLEqCAoqCm_hA@mail.gmail.com>
+Subject: 
+To: sakshipawar1704@gmail.com, shwetapimpale15@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000aaeeb30603320af1"
+
+--000000000000aaeeb30603320af1
+Content-Type: text/plain; charset="UTF-8"
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+          body: Center(
+            child: Row(
+              mainAxisSize:MainAxisSize. min ,
+             children: [
+              Expanded(child:
+               Container(
+                height: 200,
+                width:200,
+                color:Colors.pink,
+                child: Image.network('
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU
+'),
+                ),),
+                const SizedBox(height:20,width:10),
+                 Expanded(child: Container(
+                height: 200,
+                width:200,
+                color: Colors.red,
+                child: Image.network('
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFjWYi8B2SPsAnvwgElXr7zZ_Gc8yvZEzSdQ&usqp=CAU
+'),
+                ),
+                 ),
+                const SizedBox(height:20,width:10),
+                Expanded(child: Container(
+                height: 200,
+                width:200,
+                color: Colors.blue,
+                child: Image.network('
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXrywfIt9prOF85IwZjy08eGxYzNxGGrTzQ&usqp=CAU
+'),
+                ),
+                ),
+
+
+             ],
+              ),
+
+            ),
+
+          ),
+      ),
+
+
+  );
+}
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+          body: Center(
+            child: Stack(
+             children: [
+               Container(
+                height: 400,
+                width:400,
+                color:Colors.pink,
+                //child: Image.network('
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU'
+),
+                ),
+                const SizedBox(height:20,width:10),
+                 Container(
+                height: 300,
+                width:300,
+                color: Colors.red,
+                //child: Image.network('
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFjWYi8B2SPsAnvwgElXr7zZ_Gc8yvZEzSdQ&usqp=CAU'
+),
+                 ),
+                const SizedBox(height:20,width:10),
+                 Container(
+                height: 200,
+                width:200,
+                color: Colors.blue,
+                //child: Image.network('
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXrywfIt9prOF85IwZjy08eGxYzNxGGrTzQ&usqp=CAU'
+),
+                ),
+
+
+
+             ],
+              ),
+
+            ),
+
+          ),
+      ),
+
+
+  );
+}
+
+--000000000000aaeeb30603320af1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style=3D"color:rgb(255,255,255);background-color:rgb(=
+0,0,0);font-family:Consolas,&quot;Courier New&quot;,monospace;font-size:12p=
+x;line-height:16px;white-space:pre"><div><span style=3D"color:rgb(86,156,21=
+4)">import</span> <span style=3D"color:rgb(206,145,120)">&#39;package:flutt=
+er/material.dart&#39;</span>;</div><br><div><span style=3D"color:rgb(86,156=
+,214)">void</span> <span style=3D"color:rgb(220,220,170)">main</span>() {</=
+div><div>=C2=A0 <span style=3D"color:rgb(220,220,170)">runApp</span>(</div>=
+<div>=C2=A0 =C2=A0 <span style=3D"color:rgb(78,201,176)">MaterialApp</span>=
+(</div><div>=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">hom=
+e</span><span style=3D"color:rgb(212,212,212)">:</span> <span style=3D"colo=
+r:rgb(78,201,176)">Scaffold</span>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 <span style=3D"color:rgb(156,220,254)">body</span><span style=3D"col=
+or:rgb(212,212,212)">:</span> <span style=3D"color:rgb(78,201,176)">Center<=
+/span>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"=
+color:rgb(156,220,254)">child</span><span style=3D"color:rgb(212,212,212)">=
+:</span> <span style=3D"color:rgb(78,201,176)">Row</span>(</div><div>=C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220=
+,254)">mainAxisSize</span><span style=3D"color:rgb(212,212,212)">:</span><s=
+pan style=3D"color:rgb(78,201,176)">MainAxisSize</span>. <span style=3D"col=
+or:rgb(156,220,254)">min</span> ,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(156,220,254)">children</span><spa=
+n style=3D"color:rgb(212,212,212)">:</span> [</div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(78,201,176)">Expan=
+ded</span>(<span style=3D"color:rgb(156,220,254)">child</span><span style=
+=3D"color:rgb(212,212,212)">:</span> </div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(78,201,176)">Container=
+</span>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+<span style=3D"color:rgb(156,220,254)">height</span><span style=3D"color:rg=
+b(212,212,212)">:</span> <span style=3D"color:rgb(181,206,168)">200</span>,=
+</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span st=
+yle=3D"color:rgb(156,220,254)">width</span><span style=3D"color:rgb(212,212=
+,212)">:</span><span style=3D"color:rgb(181,206,168)">200</span>,</div><div=
+>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"col=
+or:rgb(156,220,254)">color</span><span style=3D"color:rgb(212,212,212)">:</=
+span><span style=3D"color:rgb(78,201,176)">Colors</span>.<span style=3D"col=
+or:rgb(156,220,254)">pink</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">child</span=
+><span style=3D"color:rgb(212,212,212)">:</span> <span style=3D"color:rgb(7=
+8,201,176)">Image</span>.<span style=3D"color:rgb(220,220,170)">network</sp=
+an>(<span style=3D"color:rgb(206,145,120)">&#39;<a href=3D"https://encrypte=
+d-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Nta=
+w&amp;usqp=3DCAU">https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcT=
+tnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&amp;usqp=3DCAU</a>&#39;</span>),</div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),),</div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"colo=
+r:rgb(86,156,214)">const</span> <span style=3D"color:rgb(78,201,176)">Sized=
+Box</span>(<span style=3D"color:rgb(156,220,254)">height</span><span style=
+=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(181,206,168)">=
+20</span>,<span style=3D"color:rgb(156,220,254)">width</span><span style=3D=
+"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(181,206,168)">10<=
+/span>),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0<span style=3D"color:rgb(78,201,176)">Expanded</span>(<span style=3D"=
+color:rgb(156,220,254)">child</span><span style=3D"color:rgb(212,212,212)">=
+:</span> <span style=3D"color:rgb(78,201,176)">Container</span>(</div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"colo=
+r:rgb(156,220,254)">height</span><span style=3D"color:rgb(212,212,212)">:</=
+span> <span style=3D"color:rgb(181,206,168)">200</span>, </div><div>=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(1=
+56,220,254)">width</span><span style=3D"color:rgb(212,212,212)">:</span><sp=
+an style=3D"color:rgb(181,206,168)">200</span>,</div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254=
+)">color</span><span style=3D"color:rgb(212,212,212)">:</span> <span style=
+=3D"color:rgb(78,201,176)">Colors</span>.<span style=3D"color:rgb(156,220,2=
+54)">red</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 <span style=3D"color:rgb(156,220,254)">child</span><span style=3D"c=
+olor:rgb(212,212,212)">:</span> <span style=3D"color:rgb(78,201,176)">Image=
+</span>.<span style=3D"color:rgb(220,220,170)">network</span>(<span style=
+=3D"color:rgb(206,145,120)">&#39;<a href=3D"https://encrypted-tbn0.gstatic.=
+com/images?q=3Dtbn:ANd9GcSFjWYi8B2SPsAnvwgElXr7zZ_Gc8yvZEzSdQ&amp;usqp=3DCA=
+U">https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcSFjWYi8B2SPsAnvw=
+gElXr7zZ_Gc8yvZEzSdQ&amp;usqp=3DCAU</a>&#39;</span>),</div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0),</div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(86,156,2=
+14)">const</span> <span style=3D"color:rgb(78,201,176)">SizedBox</span>(<sp=
+an style=3D"color:rgb(156,220,254)">height</span><span style=3D"color:rgb(2=
+12,212,212)">:</span><span style=3D"color:rgb(181,206,168)">20</span>,<span=
+ style=3D"color:rgb(156,220,254)">width</span><span style=3D"color:rgb(212,=
+212,212)">:</span><span style=3D"color:rgb(181,206,168)">10</span>),</div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"=
+color:rgb(78,201,176)">Expanded</span>(<span style=3D"color:rgb(156,220,254=
+)">child</span><span style=3D"color:rgb(212,212,212)">:</span> <span style=
+=3D"color:rgb(78,201,176)">Container</span>(</div><div>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">=
+height</span><span style=3D"color:rgb(212,212,212)">:</span> <span style=3D=
+"color:rgb(181,206,168)">200</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">width</s=
+pan><span style=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb=
+(181,206,168)">200</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">color</span><span =
+style=3D"color:rgb(212,212,212)">:</span> <span style=3D"color:rgb(78,201,1=
+76)">Colors</span>.<span style=3D"color:rgb(156,220,254)">blue</span>,</div=
+><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=
+=3D"color:rgb(156,220,254)">child</span><span style=3D"color:rgb(212,212,21=
+2)">:</span> <span style=3D"color:rgb(78,201,176)">Image</span>.<span style=
+=3D"color:rgb(220,220,170)">network</span>(<span style=3D"color:rgb(206,145=
+,120)">&#39;<a href=3D"https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:AN=
+d9GcTnXrywfIt9prOF85IwZjy08eGxYzNxGGrTzQ&amp;usqp=3DCAU">https://encrypted-=
+tbn0.gstatic.com/images?q=3Dtbn:ANd9GcTnXrywfIt9prOF85IwZjy08eGxYzNxGGrTzQ&=
+amp;usqp=3DCAU</a>&#39;</span>),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 ),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 ),</div><br><br><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0],</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 ),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div><br><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 ),</div><div>=C2=A0 =C2=A0 =C2=A0 ),</div><div>=C2=A0 =C2=
+=A0 =C2=A0 </div><div>=C2=A0 </div><div>=C2=A0 );</div><div>}</div>
+
+<div style=3D"line-height:16px"><div><span style=3D"color:rgb(86,156,214)">=
+import</span> <span style=3D"color:rgb(206,145,120)">&#39;package:flutter/m=
+aterial.dart&#39;</span>;</div><br><div><span style=3D"color:rgb(86,156,214=
+)">void</span> <span style=3D"color:rgb(220,220,170)">main</span>() {</div>=
+<div>=C2=A0 <span style=3D"color:rgb(220,220,170)">runApp</span>(</div><div=
+>=C2=A0 =C2=A0 <span style=3D"color:rgb(78,201,176)">MaterialApp</span>(</d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">home</s=
+pan><span style=3D"color:rgb(212,212,212)">:</span> <span style=3D"color:rg=
+b(78,201,176)">Scaffold</span>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 <span style=3D"color:rgb(156,220,254)">body</span><span style=3D"color:=
+rgb(212,212,212)">:</span> <span style=3D"color:rgb(78,201,176)">Center</sp=
+an>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"col=
+or:rgb(156,220,254)">child</span><span style=3D"color:rgb(212,212,212)">:</=
+span> <span style=3D"color:rgb(78,201,176)">Stack</span>(</div><div>=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(156,220,2=
+54)">children</span><span style=3D"color:rgb(212,212,212)">:</span> [</div>=
+<div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"=
+color:rgb(78,201,176)">Container</span>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">heig=
+ht</span><span style=3D"color:rgb(212,212,212)">:</span> <span style=3D"col=
+or:rgb(181,206,168)">400</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">width</span=
+><span style=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(18=
+1,206,168)">400</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">color</span><span sty=
+le=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(78,201,176)"=
+>Colors</span>.<span style=3D"color:rgb(156,220,254)">pink</span>,</div><di=
+v>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"co=
+lor:rgb(124,166,104)">//child: Image.network(&#39;<a href=3D"https://encryp=
+ted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2N=
+taw&amp;usqp=3DCAU&#39;">https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:=
+ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&amp;usqp=3DCAU&#39;</a>),</span>=
+</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div>=
+<div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D=
+"color:rgb(86,156,214)">const</span> <span style=3D"color:rgb(78,201,176)">=
+SizedBox</span>(<span style=3D"color:rgb(156,220,254)">height</span><span s=
+tyle=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(181,206,16=
+8)">20</span>,<span style=3D"color:rgb(156,220,254)">width</span><span styl=
+e=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(181,206,168)"=
+>10</span>),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0<span style=3D"color:rgb(78,201,176)">Container</span>(</div><div=
+>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"col=
+or:rgb(156,220,254)">height</span><span style=3D"color:rgb(212,212,212)">:<=
+/span> <span style=3D"color:rgb(181,206,168)">300</span>, </div><div>=C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(=
+156,220,254)">width</span><span style=3D"color:rgb(212,212,212)">:</span><s=
+pan style=3D"color:rgb(181,206,168)">300</span>,</div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,=
+254)">color</span><span style=3D"color:rgb(212,212,212)">:</span> <span sty=
+le=3D"color:rgb(78,201,176)">Colors</span>.<span style=3D"color:rgb(156,220=
+,254)">red</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 <span style=3D"color:rgb(124,166,104)">//child: Image.network(&#=
+39;<a href=3D"https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcSFjWY=
+i8B2SPsAnvwgElXr7zZ_Gc8yvZEzSdQ&amp;usqp=3DCAU&#39;">https://encrypted-tbn0=
+.gstatic.com/images?q=3Dtbn:ANd9GcSFjWYi8B2SPsAnvwgElXr7zZ_Gc8yvZEzSdQ&amp;=
+usqp=3DCAU&#39;</a>),</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(86,156,214)">const</span> <sp=
+an style=3D"color:rgb(78,201,176)">SizedBox</span>(<span style=3D"color:rgb=
+(156,220,254)">height</span><span style=3D"color:rgb(212,212,212)">:</span>=
+<span style=3D"color:rgb(181,206,168)">20</span>,<span style=3D"color:rgb(1=
+56,220,254)">width</span><span style=3D"color:rgb(212,212,212)">:</span><sp=
+an style=3D"color:rgb(181,206,168)">10</span>),</div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(78,20=
+1,176)">Container</span>(</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">height</span><span=
+ style=3D"color:rgb(212,212,212)">:</span> <span style=3D"color:rgb(181,206=
+,168)">200</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 <span style=3D"color:rgb(156,220,254)">width</span><span style=
+=3D"color:rgb(212,212,212)">:</span><span style=3D"color:rgb(181,206,168)">=
+200</span>,</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 <span style=3D"color:rgb(156,220,254)">color</span><span style=3D"color=
+:rgb(212,212,212)">:</span> <span style=3D"color:rgb(78,201,176)">Colors</s=
+pan>.<span style=3D"color:rgb(156,220,254)">blue</span>,</div><div>=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(1=
+24,166,104)">//child: Image.network(&#39;<a href=3D"https://encrypted-tbn0.=
+gstatic.com/images?q=3Dtbn:ANd9GcTnXrywfIt9prOF85IwZjy08eGxYzNxGGrTzQ&amp;u=
+sqp=3DCAU&#39;">https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcTnX=
+rywfIt9prOF85IwZjy08eGxYzNxGGrTzQ&amp;usqp=3DCAU&#39;</a>),</span></div><di=
+v>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </div><br><br><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0],</div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 </div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div>=
+<br><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ),</div><div>=C2=A0 =C2=A0 =C2=
+=A0 ),</div><div>=C2=A0 =C2=A0 =C2=A0 </div><div>=C2=A0 </div><div>=C2=A0 )=
+;</div><div>}</div><br></div>
+
+</div></div>
+
+--000000000000aaeeb30603320af1--
